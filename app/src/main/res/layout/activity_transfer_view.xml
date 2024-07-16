@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransferView">
+
+    <ImageView
+        android:id="@+id/iv_left_arrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/tv_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/spoqa_han_sans_neo_bold"
+        android:text="@string/transfer_where"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_left_arrow" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_taplayout"
+        android:background="@color/white"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_where">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계좌" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <EditText
+        android:id="@+id/et_account_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="11"
+        android:fontFamily="@font/spoqa_han_sans_neo_regular"
+        android:gravity="left"
+        android:hint="계좌번호 입력"
+        android:inputType="number"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_where"
+        app:layout_constraintTop_toBottomOf="@id/tl_taplayout" />
+
+    <TextView
+        android:id="@+id/recent_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/spoqa_han_sans_neo_medium"
+        android:text="최근 보낸 계좌"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_account_num" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/et_account_num"
+        app:layout_constraintTop_toBottomOf="@id/recent_sent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
