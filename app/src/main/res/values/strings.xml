@@ -4,4 +4,5 @@
     <string name="first_tap_text">즉시 빠른 송금 가능</string>
     <string name="second_text">토스뱅크</string>
     <string name="comma_number">%,d</string>
+    <string name="transfer_where">어디로 돈을 보낼까요?</string>
 </resources>
