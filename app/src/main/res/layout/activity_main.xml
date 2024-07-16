@@ -180,6 +180,7 @@
                 </androidx.recyclerview.widget.RecyclerView>
 
                 <LinearLayout
+                    android:gravity="center"
                     android:id="@+id/inner_content3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -191,7 +192,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/toss_logo" />
+                        android:src="@drawable/icon_cards" />
 
                     <LinearLayout
                         android:id="@+id/inner_text_linear3"
@@ -204,15 +205,15 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="asdfaasdfasdfasdfsdf" />
+                            android:text="7월에 쓴돈" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="asdfaasdfasdfasdfsdf"
-                            android:textColor="@color/toss_blue" />
-
-
+                            android:text="10,000,000원"
+                            android:fontFamily="@font/spoqa_han_sans_neo_medium"
+                            android:textSize="20dp"
+                            android:textColor="@color/black" />
                     </LinearLayout>
 
                     <View
@@ -220,10 +221,11 @@
                         android:layout_height="0dp"
                         android:layout_weight="1" />
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/toss_logo" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="내역"
+                         />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
