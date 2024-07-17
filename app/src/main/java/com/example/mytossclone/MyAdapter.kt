@@ -22,8 +22,8 @@ class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapt
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.itemView.setOnClickListener{
-            itemClick?.onClick(it,position)
+        holder.itemView.setOnClickListener {
+            itemClick?.onClick(it, position)
         }
         val dec = DecimalFormat("#,###")
 

@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TransferView">
 
     <ImageView
@@ -32,10 +32,10 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tl_taplayout"
-        android:background="@color/white"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_where">
@@ -79,11 +79,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview2"
-        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/border_layout"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/et_account_num"
