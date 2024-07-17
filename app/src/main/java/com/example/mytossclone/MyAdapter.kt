@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytossclone.databinding.ItemRecyclerviewBinding
+import java.text.DecimalFormat
 
 class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapter.Holder>() {
 
@@ -24,10 +25,11 @@ class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapt
         holder.itemView.setOnClickListener{
             itemClick?.onClick(it,position)
         }
+        val dec = DecimalFormat("#,###")
 
         holder.iconImageView.setImageResource(myItems[position].aIcon)
         holder.name.text = myItems[position].aName
-        holder.deposit.text = myItems[position].aDeposit.toString()
+        holder.deposit.setText("${dec.format(myItems[position].aDeposit)}원")
     }
 
     override fun getItemId(position: Int): Long {
