@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:padding="15dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:padding="15dp">
 
     <ImageView
         android:id="@+id/bank_logo"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/icon_kakao"/>
+        android:src="@drawable/icon_kakao" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,19 +22,19 @@
             android:id="@+id/bank_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:fontFamily="@font/spoqa_han_sans_neo_regular"
-            android:textColor="@color/toss_gray"
             android:text="dfasdfasdfa"
-            android:layout_marginBottom="5dp"/>
+            android:textColor="@color/toss_gray" />
 
         <TextView
             android:id="@+id/deposit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/spoqa_han_sans_neo_medium"
+            android:text="asdf"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:text="asdf"/>
+            android:textSize="20dp" />
 
     </LinearLayout>
 
@@ -43,14 +43,14 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <android.widget.Button
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:text="송금"
+        android:background="@drawable/border_button"
+        android:backgroundTint="@color/toss_gray"
         android:fontFamily="@font/spoqa_han_sans_neo_regular"
-        android:background="@drawable/border_layout"
-        android:backgroundTint="@color/toss_gray"/>
-
+        android:text="송금"
+        android:textSize="18sp" />
 
 
 </LinearLayout>
